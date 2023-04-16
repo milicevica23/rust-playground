@@ -1,11 +1,12 @@
 [package]
-name = "polars-utils"
+name = "string_sum"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "string_sum"
+crate-type = ["cdylib"]
 
 [dependencies]
-color-eyre = "0.6.2"
-polars = "0.28.0"
-reqwest = { version = "0.11.16", features = ["blocking"] }
+pyo3 = "0.18.1"
